@@ -1,0 +1,26 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="browser-opener">
+    <template>
+        <a id="content" on-click="navigate" href$="[[url]]"></a>
+    </template>
+
+    <script>
+        class BrowserOpener extends Polymer.Element {
+            static get is() {
+                return 'browser-opener';
+            }
+
+            static get properties() {
+                return {
+                    url: String
+                };
+            }
+            navigate(event) {
+                event.preventDefault();
+                window.open(this.url, "_blank");
+            }
+        }
+        customElements.define(BrowserOpener.is, BrowserOpener);
+    </script>
+</dom-module>
