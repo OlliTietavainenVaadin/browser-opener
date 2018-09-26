@@ -1,4 +1,4 @@
-<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/polymer/polymer.html">
 
 <dom-module id="browser-opener">
     <template>
@@ -13,12 +13,13 @@
 
             static get properties() {
                 return {
-                    url: String
+                    url: String,
+                    windowName: String
                 };
             }
             navigate(event) {
                 event.preventDefault();
-                window.open(this.url, "_blank");
+                window.open(this.url, this.windowName);
             }
         }
         customElements.define(BrowserOpener.is, BrowserOpener);
