@@ -5,12 +5,12 @@
 
     <groupId>org.vaadin.olli</groupId>
     <artifactId>browser-opener</artifactId>
-    <version>0.1</version>
+    <version>0.3</version>
     <name>Browser Opener</name>
     <description>Helper component for opening a new browser window</description>
 
     <properties>
-        <vaadin.version>11.0.0</vaadin.version>
+        <vaadin.version>10.0.0</vaadin.version>
 
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
