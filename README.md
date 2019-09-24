@@ -26,3 +26,5 @@ This deploys demo at http://localhost:8080
 
 0.1 : basic functionality, allows specifying URL to open. Target is always 
 `_blank`.
+0.2-0.3: V10+ version features 
+0.4: V14 version
