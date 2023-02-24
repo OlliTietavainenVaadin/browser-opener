@@ -5,15 +5,15 @@
 
     <groupId>org.vaadin.olli</groupId>
     <artifactId>browser-opener</artifactId>
-    <version>1.0.0</version>
+    <version>2.0.0</version>
     <name>Browser Opener</name>
     <description>Helper component for opening a new browser window</description>
 
     <properties>
-        <vaadin.version>23.1.7</vaadin.version>
+        <vaadin.version>24.0.0.beta4</vaadin.version>
 
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -46,7 +46,7 @@
         </repository>
         <repository>
             <id>Vaadin prereleases</id>
-            <url>http://maven.vaadin.com/vaadin-prereleases</url>
+            <url>https://maven.vaadin.com/vaadin-prereleases</url>
         </repository>
         <!-- The bintray repository contain webjars immediately after generation. If the webjar is available
              in Maven central, you do not need this repository -->
@@ -67,7 +67,14 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <pluginRepositories>
+        <pluginRepository>
+            <id>vaadin-prereleases</id>
+            <url>
+                https://maven.vaadin.com/vaadin-prereleases/
+            </url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <build>
         <plugins>
