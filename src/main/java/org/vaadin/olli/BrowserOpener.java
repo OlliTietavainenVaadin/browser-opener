@@ -2,7 +2,6 @@ package org.vaadin.olli;
 
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Tag;
-import com.vaadin.flow.component.dependency.HtmlImport;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.html.Anchor;
 import com.vaadin.flow.component.polymertemplate.Id;
@@ -14,7 +13,6 @@ import com.vaadin.flow.templatemodel.TemplateModel;
  */
 @Tag("browser-opener")
 @JsModule("./browser-opener.js")
-@HtmlImport("./browser-opener.html")
 public class BrowserOpener extends PolymerTemplate<BrowserOpener.BrowserOpenerModel> {
 
     @Id
@@ -27,8 +25,7 @@ public class BrowserOpener extends PolymerTemplate<BrowserOpener.BrowserOpenerMo
     /**
      * Set the address to open.
      *
-     * @param url
-     *     URL address BrowserOpener should navigate to
+     * @param url URL address BrowserOpener should navigate to
      */
     public void setUrl(String url) {
         getModel().setUrl(url);
@@ -37,8 +34,7 @@ public class BrowserOpener extends PolymerTemplate<BrowserOpener.BrowserOpenerMo
     /**
      * Name of the window to open. Defaults to @code{_blank}, which opens a new tab.
      *
-     * @param windowName
-     *     name of the window
+     * @param windowName name of the window
      */
     public void setWindowName(String windowName) {
         getModel().setWindowName(windowName);
@@ -47,8 +43,7 @@ public class BrowserOpener extends PolymerTemplate<BrowserOpener.BrowserOpenerMo
     /**
      * Set the component to wrap. Clicking this component will navigate to the url specified in `setUrl`
      *
-     * @param component
-     *     The component to wrap.
+     * @param component The component to wrap.
      */
     public void setContent(Component component) {
         this.content.removeAll();
