@@ -7,7 +7,7 @@
     "@polymer/iron-list": "3.1.0",
     "@polymer/iron-meta": "3.0.1",
     "@polymer/iron-resizable-behavior": "3.0.1",
-    "@polymer/polymer": "3.4.1",
+    "@polymer/polymer": "3.5.1",
     "@vaadin/accordion": "23.1.6",
     "@vaadin/app-layout": "23.1.6",
     "@vaadin/avatar": "23.1.6",
@@ -102,7 +102,7 @@
     "@vaadin/virtual-list": "23.1.6",
     "construct-style-sheets-polyfill": "3.1.0",
     "date-fns": "2.28.0",
-    "lit": "2.2.3"
+    "lit": "2.6.1"
   },
   "devDependencies": {
     "async": "3.2.2",
@@ -114,18 +114,27 @@
     "extract-loader": "5.1.0",
     "file-loader": "6.2.0",
     "fork-ts-checker-webpack-plugin": "6.2.1",
-    "glob": "7.1.6",
+    "glob": "7.2.3",
     "html-webpack-plugin": "4.5.1",
     "lit-css-loader": "0.1.0",
     "loader-utils": "2.0.0",
-    "typescript": "4.5.3",
+    "typescript": "4.9.3",
     "webpack": "4.46.0",
     "webpack-cli": "4.10.0",
     "webpack-dev-server": "4.9.2",
     "webpack-merge": "4.2.2",
-    "workbox-core": "6.5.0",
-    "workbox-precaching": "6.5.0",
-    "workbox-webpack-plugin": "6.5.0"
+    "workbox-core": "6.5.4",
+    "workbox-precaching": "6.5.4",
+    "workbox-webpack-plugin": "6.5.0",
+    "strip-css-comments": "5.0.0",
+    "workbox-build": "6.5.4",
+    "@rollup/plugin-replace": "5.0.2",
+    "mkdirp": "1.0.4",
+    "vite": "4.1.2",
+    "rollup-plugin-brotli": "3.1.0",
+    "@rollup/pluginutils": "5.0.2",
+    "vite-plugin-checker": "0.5.5",
+    "transform-ast": "2.4.4"
   },
   "vaadin": {
     "dependencies": {
@@ -134,7 +143,7 @@
       "@polymer/iron-list": "3.1.0",
       "@polymer/iron-meta": "3.0.1",
       "@polymer/iron-resizable-behavior": "3.0.1",
-      "@polymer/polymer": "3.4.1",
+      "@polymer/polymer": "3.5.1",
       "@vaadin/accordion": "23.1.6",
       "@vaadin/app-layout": "23.1.6",
       "@vaadin/avatar": "23.1.6",
@@ -228,7 +237,7 @@
       "@vaadin/virtual-list": "23.1.6",
       "construct-style-sheets-polyfill": "3.1.0",
       "date-fns": "2.28.0",
-      "lit": "2.2.3"
+      "lit": "2.6.1"
     },
     "devDependencies": {
       "async": "3.2.2",
@@ -240,18 +249,27 @@
       "extract-loader": "5.1.0",
       "file-loader": "6.2.0",
       "fork-ts-checker-webpack-plugin": "6.2.1",
-      "glob": "7.1.6",
+      "glob": "7.2.3",
       "html-webpack-plugin": "4.5.1",
       "lit-css-loader": "0.1.0",
       "loader-utils": "2.0.0",
-      "typescript": "4.5.3",
+      "typescript": "4.9.3",
       "webpack": "4.46.0",
       "webpack-cli": "4.10.0",
       "webpack-dev-server": "4.9.2",
       "webpack-merge": "4.2.2",
-      "workbox-core": "6.5.0",
-      "workbox-precaching": "6.5.0",
-      "workbox-webpack-plugin": "6.5.0"
+      "workbox-core": "6.5.4",
+      "workbox-precaching": "6.5.4",
+      "workbox-webpack-plugin": "6.5.0",
+      "strip-css-comments": "5.0.0",
+      "workbox-build": "6.5.4",
+      "@rollup/plugin-replace": "5.0.2",
+      "mkdirp": "1.0.4",
+      "vite": "4.1.2",
+      "rollup-plugin-brotli": "3.1.0",
+      "@rollup/pluginutils": "5.0.2",
+      "vite-plugin-checker": "0.5.5",
+      "transform-ast": "2.4.4"
     },
     "hash": "f9b79a04e8955d3320d37271ba8d1df637af272b80ce6aefb1ad7c10867ce280"
   },
@@ -355,6 +373,7 @@
     "construct-style-sheets-polyfill": "$construct-style-sheets-polyfill",
     "lit": "$lit",
     "@polymer/polymer": "$@polymer/polymer",
-    "chokidar": "$chokidar"
+    "chokidar": "$chokidar",
+    "date-fns": "$date-fns"
   }
 }
